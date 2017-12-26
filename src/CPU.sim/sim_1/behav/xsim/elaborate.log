@@ -1,0 +1,36 @@
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto dc902adce7594e52977887b6f93ddf80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips_min_sopc.v" Line 5. Module openmips_min_sopc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips.v" Line 3. Module openmips doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/pc_reg.v" Line 4. Module pc_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/if_id.v" Line 35. Module if_id doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/id.v" Line 6. Module id doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/regfile.v" Line 5. Module regfile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/id_ex.v" Line 5. Module id_ex doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ex.v" Line 5. Module ex doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ex_mem.v" Line 4. Module ex_mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/mem.v" Line 4. Module mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/mem_wb.v" Line 4. Module mem_wb doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/inst_rom.v" Line 5. Module inst_rom doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav

@@ -1,0 +1,20 @@
+0.6
+2017.3
+Oct  4 2017
+20:11:37
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.sim/sim_1/behav/xsim/glbl.v,1513995287,verilog,,,,glbl,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,1514091123,verilog,,,,,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ex.v,1514281570,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ex_mem.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,ex,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ex_mem.v,1513760710,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/id.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,ex_mem,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/id.v,1514283104,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/id_ex.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,id,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/id_ex.v,1514273961,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/if_id.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,id_ex,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/if_id.v,1513875738,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/inst_rom.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,if_id,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/inst_rom.v,1514277906,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/mem.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,inst_rom,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/mem.v,1514274655,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/mem_wb.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,mem,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/mem_wb.v,1514274497,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,mem_wb,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips.v,1514275165,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips_min_sopc.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,openmips,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips_min_sopc.v,1514274721,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/pc_reg.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,openmips_min_sopc,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips_min_sopc_tb.v,1513760472,verilog,,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,openmips_min_sopc_tb,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/pc_reg.v,1513760710,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/regfile.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,pc_reg,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/regfile.v,1514275251,verilog,,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips_min_sopc_tb.v,D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/defines.v,regfile,,,,,,,,
+D:/~RayCiel/Study/Computer Architecture/vivado/NOW/CPU/CPU.srcs/sim_1/new/defines.v,1513943458,verilog,,,,,,,,,,,,

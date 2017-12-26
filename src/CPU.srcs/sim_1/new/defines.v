@@ -7,7 +7,7 @@
 `define ReadEnable 1'b1
 `define ReadDisable 1'b0
 `define AluOpBus 7:0
-`define AluSelBus 2:0
+`define AluSelBus 7:0
 `define InstValid 1'b0
 `define InstInvalid 1'b1
 `define Stop 1'b1
@@ -39,25 +39,107 @@
 
 
 //Ö¸Áî
+`define EXE_BEQ 3'b000
+`define EXE_BNE 3'b001
+`define EXE_BLT 3'b100
+`define EXE_BGE 3'b101
+`define EXE_BLTU 3'b110
+`define EXE_BGEU 3'b111
+`define EXE_LB 3'b000
+`define EXE_LH 3'b001
+`define EXE_LW 3'b010
+`define EXE_LBU 3'b100
+`define EXE_LHU 3'b101
+`define EXE_SB 3'b000
+`define EXE_SH 3'b001
+`define EXE_SW 3'b010
+`define EXE_ADDI 3'b000
+`define EXE_SLTI 3'b010
+`define EXE_SLTIU 3'b011
+`define EXE_XORI 3'b100
 `define EXE_ORI  3'b110
+`define EXE_ANDI  3'b111
+`define EXE_SLLI 3'b001
+`define EXE_SRLI 7'b0000000
+`define EXE_SRAI 7'b0100000
+`define EXE_ADD 7'b0000000
+`define EXE_SUB 7'b0100000
+`define EXE_SLL 3'b001
+`define EXE_SLT 3'b001
+`define EXE_SLTU 3'b011
+`define EXE_XOR 3'b100
+`define EXE_SRL 7'b0000000
+`define EXE_SRA 7'b0100000
+`define EXE_OR 3'b110
+`define EXE_AND 3'b111
+`define EXE_FENCE 3'b000
+`define EXE_FENCE_I 3'b001
 
 
 `define EXE_NOP 7'b0000000
-
+`define SSNOP 32'b00000000000000000000000001000000
 
 //AluOp
+`define EXE_AND_OP   8'b00100100
 `define EXE_OR_OP    8'b00100101
+`define EXE_XOR_OP  8'b00100110
+`define EXE_NOR_OP  8'b00100111
+`define EXE_ANDI_OP  8'b01011001
 `define EXE_ORI_OP  8'b01011010
+`define EXE_XORI_OP  8'b01011011
+`define EXE_LUI_OP  8'b01011100
+`define EXE_AUIPC_OP  8'b01001111
 
+`define EXE_SLL_OP  8'b01111100
+`define EXE_SLLI_OP  8'b00000100
+`define EXE_SRL_OP  8'b00000010
+`define EXE_SRLI_OP  8'b00000110
+`define EXE_SRA_OP  8'b00000011
+`define EXE_SRAI_OP  8'b00000111
+
+`define EXE_SLT_OP  8'b00101010
+`define EXE_SLTU_OP  8'b00101011
+`define EXE_SLTI_OP  8'b01010111
+`define EXE_SLTIU_OP  8'b01011000
+`define EXE_ADD_OP  8'b00100000
+`define EXE_SUB_OP  8'b00100010
+`define EXE_ADDI_OP  8'b01010101
+
+
+
+`define EXE_JAL_OP  8'b01010000
+`define EXE_JALR_OP  8'b00001001
+`define EXE_BEQ_OP  8'b01010001
+`define EXE_BGE_OP  8'b01000001
+`define EXE_BGEU_OP  8'b01001011
+`define EXE_BLT_OP  8'b01000000
+`define EXE_BLTU_OP  8'b01001010
+`define EXE_BNE_OP  8'b01010010
+
+`define EXE_LB_OP  8'b11100000
+`define EXE_LBU_OP  8'b11100100
+`define EXE_LH_OP  8'b11100001
+`define EXE_LHU_OP  8'b11100101
+`define EXE_LW_OP  8'b11100011
+`define EXE_SB_OP  8'b11101000
+`define EXE_SH_OP  8'b11101001
+`define EXE_SW_OP  8'b11101011
+
+`define EXE_FENCE_I_OP  8'b10101010
+`define EXE_FENCE_OP  8'b10101011
 
 `define EXE_NOP_OP    8'b00000000
-
 //AluSel
-`define EXE_RES_LOGIC 3'b001
+`define EXE_RES_LOGIC 8'b00011000
+`define EXE_RES_SHIFT 8'b00011001
+`define EXE_RES_MOVE 8'b10101001
+`define EXE_RES_ARITHMETIC 8'b10100110
+`define EXE_RES_MUL 8'b10101000
+`define EXE_RES_JUMP_BRANCH 8'b11110011
+`define EXE_RES_LOAD 8'b00011011
+`define EXE_RES_STORE 8'b00011010
 
-`define EXE_RES_NOP 3'b000
-
-
+`define EXE_RES_NOP 8'b00000000
 //Ö¸Áî´æ´¢Æ÷inst_rom
 `define InstAddrBus 31:0
 `define InstBus 31:0

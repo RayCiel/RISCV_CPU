@@ -1,0 +1,365 @@
+/*
+
+Xilinx Vivado v2017.3 (64-bit) [Major: 2017, Minor: 3]
+SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+
+Process ID: 13040
+License: Customer
+
+Current time: 	Sat Dec 23 11:08:03 CST 2017
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 16 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2017.3/tps/win64/jre
+JVM executable location: 	D:/Xilinx/Vivado/2017.3/tps/win64/jre/bin/java.exe
+
+User name: 	lenovo
+User home directory: C:/Users/lenovo
+User working directory: D:/~RayCiel/Study/Computer Architecture/CPUtask/src
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2017.3
+RDI_DATADIR: D:/Xilinx/Vivado/2017.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2017.3/bin
+
+User preferences location: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.3/vivado.xml
+Vivado layouts directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2017.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/~RayCiel/Study/Computer Architecture/CPUtask/src/vivado.log
+Vivado journal file location: 	D:/~RayCiel/Study/Computer Architecture/CPUtask/src/vivado.jou
+Engine tmp dir: 	D:/~RayCiel/Study/Computer Architecture/CPUtask/src/.Xil/Vivado-13040-RayCiel
+
+GUI allocated memory:	187 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 558 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr. Version: Vivado v2017.3 
+// bs (cl):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 57 MB (+56909kb) [00:00:07]
+// [Engine Memory]: 515 MB (+388913kb) [00:00:07]
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.xpr} 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/~RayCiel/Study/Computer Architecture/vivado/NOW/CPU' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 541 MB (+86kb) [00:00:09]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 564 MB. GUI used memory: 58 MB. Current time: 12/23/17 11:08:03 AM CST
+// Project name: CPU; location: D:/~RayCiel/Study/Computer Architecture/CPUtask/src; part: xc7k70tfbv676-1
+dismissDialog("Open Project"); // bs (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 65 MB (+5838kb) [00:00:13]
+// [Engine Memory]: 571 MB (+2366kb) [00:00:13]
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 45 MB. Current time: 12/23/17 11:08:37 AM CST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: source openmips_min_sopc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: &^*^&waddr =  x          x 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 841.711 ; gain = 72.750 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e (cl)
+// [GUI Memory]: 71 MB (+2872kb) [00:00:45]
+// Elapsed time: 41 seconds
+selectButton((HResource) null, "Waveform Viewer_settings"); // u (f, cl): TRUE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 45 MB. Current time: 12/23/17 11:09:19 AM CST
+selectTab(RDIResource.WaveformOptionsView_TABBED_PANE, RDIResource.WaveformOptionsView_COLORS, "Colors", 1); // i (c, cl)
+// [GUI Memory]: 79 MB (+5068kb) [00:01:38]
+// Elapsed time: 15 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aF (Q, cl)
+// PAPropertyPanels.initPanels (openmips_min_sopc_tb.v) elapsed time: 0.2s
+// Elapsed time: 68 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, openmips_min_sopc_tb (openmips_min_sopc_tb.v)]", 5, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, openmips_min_sopc_tb (openmips_min_sopc_tb.v)]", 5, true); // B (D, cl) - Node
+// [Engine Memory]: 604 MB (+5587kb) [00:02:54]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, openmips_min_sopc_tb (openmips_min_sopc_tb.v)]", 5, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+// [GUI Memory]: 84 MB (+381kb) [00:02:55]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File]", 7, true); // B (D, cl) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cl)
+// [GUI Memory]: 88 MB (+160kb) [00:03:24]
+selectMenuItem(RDIResourceCommand.RDICommands_WAVEFORM_OPEN_CONFIGURATION, "Open Waveform Configuration..."); // ac (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_OPEN_CONFIGURATION
+setFileChooser("D:/~RayCiel/Study/Computer Architecture/vivado/NOW/CPU/openmips_min_sopc_tb_behav.wcfg");
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 622 MB. GUI used memory: 51 MB. Current time: 12/23/17 11:11:23 AM CST
+// Waveform: addNotify
+// Tcl Message: open_wave_config {D:/~RayCiel/Study/Computer Architecture/vivado/NOW/CPU/openmips_min_sopc_tb_behav.wcfg} 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// bs (cl):  Open Waveform Configuration : addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 53 MB. Current time: 12/23/17 11:11:24 AM CST
+dismissDialog("Open Waveform Configuration"); // bs (cl)
+// [Engine Memory]: 641 MB (+7100kb) [00:03:34]
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {D:/~RayCiel/Study/Computer Architecture/vivado/NOW/CPU/openmips_min_sopc_tb_behav.wcfg} 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b (cl):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: "xvlog --incr --relax -prj openmips_min_sopc_tb_vlog.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.sim/sim_1/behav/xsim' INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.sim/sim_1/behav/xsim' 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Vivado Simulator 2017.3 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto dc902adce7594e52977887b6f93ddf80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds 
+// Tcl Message: Vivado Simulator 2017.3 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_DELETE_ALL_BREAKPOINTS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 659 MB. GUI used memory: 54 MB. Current time: 12/23/17 11:11:37 AM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps &^*^&waddr =  x          x relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 926.988 ; gain = 46.199 
+// 'a' command handler elapsed time: 6 seconds
+dismissDialog("Relaunch Simulation"); // b (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "openmips_min_sopc_tb.v", 1); // k (j, cl)
+selectCodeEditor("openmips_min_sopc_tb.v", 150, 36); // cd (w, cl)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // w
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 52 MB. Current time: 12/23/17 11:11:58 AM CST
+// [Engine Memory]: 693 MB (+20400kb) [00:04:06]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {D:/~RayCiel/Study/Computer Architecture/vivado/NOW/CPU/openmips_min_sopc_tb_behav.wcfg} 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 53 MB. Current time: 12/23/17 11:12:25 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 52 MB. Current time: 12/23/17 11:12:25 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 52 MB. Current time: 12/23/17 11:12:25 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 52 MB. Current time: 12/23/17 11:12:25 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 51 MB. Current time: 12/23/17 11:12:25 AM CST
+// Elapsed time: 28 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 160, 612); // n (o, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 248, 616); // n (o, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 52 MB. Current time: 12/23/17 11:12:29 AM CST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File]", 7); // B (D, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, openmips_min_sopc_tb (openmips_min_sopc_tb.v), openmips_min_sopc0 : openmips_min_sopc (openmips_min_sopc.v)]", 6); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, openmips_min_sopc_tb (openmips_min_sopc_tb.v), openmips_min_sopc0 : openmips_min_sopc (openmips_min_sopc.v), inst_rom0 : inst_rom (inst_rom.v)]", 8, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, openmips_min_sopc_tb (openmips_min_sopc_tb.v), openmips_min_sopc0 : openmips_min_sopc (openmips_min_sopc.v), inst_rom0 : inst_rom (inst_rom.v)]", 8, false, false, false, false, false, true); // B (D, cl) - Double Click
+// [GUI Memory]: 94 MB (+901kb) [00:04:47]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File, ori.mem]", 14, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File, ori.mem]", 14, false, false, false, false, false, true); // B (D, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "openmips_min_sopc_tb_behav.wcfg", 0); // k (j, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 54 MB. Current time: 12/23/17 11:12:47 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 53 MB. Current time: 12/23/17 11:12:47 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 52 MB. Current time: 12/23/17 11:12:48 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 53 MB. Current time: 12/23/17 11:12:48 AM CST
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, inst_rom]", 15); // a (s, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, if_id]", 16); // a (s, cl)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 53 MB. Current time: 12/23/17 11:12:52 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 335, 440); // n (o, cl)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 53 MB. Current time: 12/23/17 11:12:56 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 375, 446); // n (o, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 469, 441); // n (o, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 53 MB. Current time: 12/23/17 11:12:59 AM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 532, 453); // n (o, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, if_id]", 9); // a (s, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, id]", 10); // a (s, cl)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 54 MB. Current time: 12/23/17 11:13:06 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 52 MB. Current time: 12/23/17 11:13:09 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 52 MB. Current time: 12/23/17 11:13:10 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 99 MB (+1087kb) [00:06:32]
+// Elapsed time: 127 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 329, 86); // n (o, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 708 MB. GUI used memory: 53 MB. Current time: 12/23/17 11:15:13 AM CST
+// Elapsed time: 280 seconds
+selectView(PAResourceOtoP.PAViews_FLOW_NAVIGATOR, "Flow Navigator", 75, 75, 214, 967, false, false, false, true, false); // D (ch, cl) - Popup Trigger
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
