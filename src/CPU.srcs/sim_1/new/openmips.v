@@ -1,5 +1,3 @@
-
-
 `include "defines.v"
 
 module openmips(
@@ -85,37 +83,37 @@ module openmips(
 
 	//译码阶段ID模块
 	id id0(
-	.rst(rst),
-	.pc_i(id_pc_i),
-	.inst_i(id_inst_i),
+		.rst(rst),
+		.pc_i(id_pc_i),
+		.inst_i(id_inst_i),
 
-	.reg1_data_i(reg1_data),
-	.reg2_data_i(reg2_data),
+		.reg1_data_i(reg1_data),
+		.reg2_data_i(reg2_data),
 
-	//处于执行阶段的指令要写入的目的寄存器信息
-	.ex_wreg_i(ex_wreg_o),
-	.ex_wdata_i(ex_wdata_o),
-	.ex_wd_i(ex_wd_o),
+	  //处于执行阶段的指令要写入的目的寄存器信息
+		.ex_wreg_i(ex_wreg_o),
+		.ex_wdata_i(ex_wdata_o),
+		.ex_wd_i(ex_wd_o),
 
-	//处于访存阶段的指令要写入的目的寄存器信息
-	.mem_wreg_i(mem_wreg_o),
-	.mem_wdata_i(mem_wdata_o),
-	.mem_wd_i(mem_wd_o),
+	  //处于访存阶段的指令要写入的目的寄存器信息
+		.mem_wreg_i(mem_wreg_o),
+		.mem_wdata_i(mem_wdata_o),
+		.mem_wd_i(mem_wd_o),
 
-	//送到regfile的信息
-	.reg1_read_o(reg1_read),
-	.reg2_read_o(reg2_read),
+		//送到regfile的信息
+		.reg1_read_o(reg1_read),
+		.reg2_read_o(reg2_read),
 
-	.reg1_addr_o(reg1_addr),
-	.reg2_addr_o(reg2_addr),
+		.reg1_addr_o(reg1_addr),
+		.reg2_addr_o(reg2_addr),
 
-	//送到ID/EX模块的信息
-	.aluop_o(id_aluop_o),
-	.alusel_o(id_alusel_o),
-	.reg1_o(id_reg1_o),
-	.reg2_o(id_reg2_o),
-	.wd_o(id_wd_o),
-	.wreg_o(id_wreg_o)
+		//送到ID/EX模块的信息
+		.aluop_o(id_aluop_o),
+		.alusel_o(id_alusel_o),
+		.reg1_o(id_reg1_o),
+		.reg2_o(id_reg2_o),
+		.wd_o(id_wd_o),
+		.wreg_o(id_wreg_o)
 	);
 
   //通用寄存器Regfile例化
