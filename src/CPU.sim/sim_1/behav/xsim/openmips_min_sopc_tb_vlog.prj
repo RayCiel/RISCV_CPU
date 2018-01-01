@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../CPU.srcs/sim_1/new/ctrl.v" \
 "../../../../CPU.srcs/sim_1/new/ex.v" \
 "../../../../CPU.srcs/sim_1/new/ex_mem.v" \
 "../../../../CPU.srcs/sim_1/new/id.v" \
@@ -16,6 +17,3 @@ verilog xil_defaultlib  \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
-
-# Do not sort compile order
-nosort

@@ -105,8 +105,6 @@
 `define EXE_SUB_OP  8'b00100010
 `define EXE_ADDI_OP  8'b01010101
 
-
-
 `define EXE_JAL_OP  8'b01010000
 `define EXE_JALR_OP  8'b00001001
 `define EXE_BEQ_OP  8'b01010001
