@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Dec 30 19:25:02 2017
+# Process ID: 21540
+# Current directory: D:/~RayCiel/Study/Computer Architecture/CPUtask/src
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1380 D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr
+# Log file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src/vivado.log
+# Journal file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.xpr}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ctrl.v} w ]
+add_files -fileset sim_1 {{D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ctrl.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source openmips_min_sopc_tb.tcl
+open_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+set_property -name {xsim.simulate.runtime} -value {10000ns} -objects [get_filesets sim_1]
+set_property -name {xsim.compile.xvlog.nosort} -value {false} -objects [get_filesets sim_1]
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

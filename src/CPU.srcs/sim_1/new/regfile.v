@@ -103,5 +103,11 @@ module regfile(
 		      rdata2 <= `ZeroWord;
 		  end
 		end
-
+		reg [31:0] i;
+		always @( posedge clk ) begin
+					for(i=0;i<32;i=i+1) begin
+						$display("regs[%d] = %d",i ,regs[i]);
+					end
+		end
+	   // end
 	endmodule
