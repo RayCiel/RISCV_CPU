@@ -124,7 +124,7 @@ module ex(
 	wd_o <= wd_i;
 
 	if((aluop_i == `EXE_ADD_OP) || (aluop_i == `EXE_ADDI_OP) || (aluop_i == `EXE_SUB_OP)) begin
-	   wreg_o <= `WriteDisable;
+	   wreg_o <= `WriteEnable;
 	end else begin
 	 wreg_o <= wreg_i;
 	end
@@ -146,7 +146,7 @@ module ex(
  	end
 	`EXE_RES_JUMP_BRANCH:	begin
 	   wdata_o <= link_address_i;
-   end	 	
+   end
  	default:					begin
  		wdata_o <= `ZeroWord;
  	end
