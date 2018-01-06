@@ -2,19 +2,18 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Sun Dec 31 21:13:24 2017
-# Process ID: 28632
+# Start of session at: Sat Jan  6 01:14:43 2018
+# Process ID: 33700
 # Current directory: D:/~RayCiel/Study/Computer Architecture/CPUtask/src
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16404 D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17664 D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr
 # Log file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src/vivado.log
 # Journal file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.xpr}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
 launch_simulation
-source openmips_min_sopc_tb.tcl
-open_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
-relaunch_sim
-relaunch_sim
-relaunch_sim
-close_sim
+launch_simulation
+launch_simulation

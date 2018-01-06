@@ -2,10 +2,10 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Tue Dec 26 15:15:58 2017
-# Process ID: 19140
+# Start of session at: Fri Jan  5 11:03:50 2018
+# Process ID: 6448
 # Current directory: D:/~RayCiel/Study/Computer Architecture/CPUtask/src
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9852 D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27580 D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr
 # Log file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src/vivado.log
 # Journal file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src\vivado.jou
 #-----------------------------------------------------------
@@ -20,11 +20,10 @@ relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
-add_files -fileset constrs_1 -norecurse {{D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/orii.mem}}
 relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
-close_sim
+relaunch_sim
