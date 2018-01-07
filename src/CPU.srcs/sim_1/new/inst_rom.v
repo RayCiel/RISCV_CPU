@@ -11,7 +11,7 @@ module inst_rom(
 	
 );
 
-	reg[`InstBus]  inst_mem[0:`InstMemNum-1];
+	reg[7:0]  inst_mem[0:`InstMemNum-1];
 
 	initial $readmemh ( "ori.mem", inst_mem );
 
@@ -19,7 +19,7 @@ module inst_rom(
 		if (ce == `ChipDisable) begin
 			inst <= `ZeroWord;
 	  end else begin
-		  inst <= inst_mem[addr[`InstMemNumLog2+1:2]];
+		  inst <= {inst_mem[addr[31:0]+3], inst_mem[addr[31:0]+2], inst_mem[addr[31:0]+1], inst_mem[addr[31:0]]};
 		end
 	end
 

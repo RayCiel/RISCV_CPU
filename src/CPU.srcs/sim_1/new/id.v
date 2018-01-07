@@ -97,7 +97,7 @@ end
 			link_addr_o <= `ZeroWord;
 			branch_target_address_o <= `ZeroWord;
 			branch_flag_o <= `NotBranch;
-			//stallreq <= `NoStop;
+			stallreq <= `NoStop;
 			//next_inst_in_delayslot_o <= `NotInDelaySlot;
 	  end else begin
 			aluop_o <= `EXE_NOP_OP;
@@ -113,7 +113,7 @@ end
 			link_addr_o <= `ZeroWord;
 			branch_target_address_o <= `ZeroWord;
 			branch_flag_o <= `NotBranch;
-			//stallreq <= `NoStop;
+			stallreq <= `NoStop;
 			//next_inst_in_delayslot_o <= `NotInDelaySlot;
 		  case (op)
 				`EXE_OP_IMM:
@@ -303,7 +303,7 @@ end
 				begin
 					wreg_o <= `WriteEnable;		aluop_o <= `EXE_AUIPC_OP;
 			  		alusel_o <= `EXE_RES_LOGIC; reg1_read_o <= 1'b0;	reg2_read_o <= 1'b0;
-					imm <= {inst_i[31:12], 12'b0} + pc_plus_4;		wd_o <= inst_i[11:7];
+					imm <= {inst_i[31:12], 12'b0} + pc_i;		wd_o <= inst_i[11:7];
 					instvalid <= `InstValid;
 				end
 				`EXE_LOAD:
@@ -457,6 +457,9 @@ end
 			if(rst == `RstEnable) begin
 				reg1_o <= `ZeroWord;
 			end
+			else if (reg1_addr_o == 0) begin
+				reg1_o <= 0;
+			end
 			else if(pre_inst_is_load == 1'b1 && ex_wd_i == reg1_addr_o
 									&& reg1_read_o == 1'b1 ) begin
 			  stallreq_for_reg1_loadrelate <= `Stop;
@@ -464,10 +467,10 @@ end
 			else if (aluop_o == `EXE_JALR_OP) begin
 				reg1_o <= link_addr_o;
 			end else if((reg1_read_o == 1'b1) && (ex_wreg_i == 1'b1)
-									&& (ex_wd_i == reg1_addr_o)) begin
+									&& (ex_wd_i == reg1_addr_o) && (reg1_addr_o != 5'h0)) begin
 				reg1_o <= ex_wdata_i;
 			end else if((reg1_read_o == 1'b1) && (mem_wreg_i == 1'b1)
-									&& (mem_wd_i == reg1_addr_o)) begin
+									&& (mem_wd_i == reg1_addr_o) && (reg1_addr_o != 5'h0)) begin
 				reg1_o <= mem_wdata_i;
 		  end else if(reg1_read_o == 1'b1) begin
 		  	reg1_o <= reg1_data_i;
@@ -483,15 +486,19 @@ end
 			stallreq_for_reg2_loadrelate <= `NoStop;
 			if(rst == `RstEnable) begin
 				reg2_o <= `ZeroWord;
-			end else if((reg2_read_o == 1'b1) && (ex_wreg_i == 1'b1)
-									&& (ex_wd_i == reg2_addr_o)) begin
+			end
+			//else if (reg2_addr_o == 0) begin
+			//	reg2_o <= 0;
+			//end
+			else if((reg2_read_o == 1'b1) && (ex_wreg_i == 1'b1)
+									&& (ex_wd_i == reg2_addr_o) && (reg2_addr_o != 5'h0)) begin
 				reg2_o <= ex_wdata_i;
 			end
 		    else if(pre_inst_is_load == 1'b1 && ex_wd_i == reg2_addr_o
 								&& reg2_read_o == 1'b1 ) begin
 		        stallreq_for_reg2_loadrelate <= `Stop;
 		  end else if((reg2_read_o == 1'b1) && (mem_wreg_i == 1'b1)
-									&& (mem_wd_i == reg2_addr_o)) begin
+									&& (mem_wd_i == reg2_addr_o) && (reg2_addr_o != 5'h0)) begin
 				reg2_o <= mem_wdata_i;
 		  end else if(reg2_read_o == 1'b1) begin
 		  	reg2_o <= reg2_data_i;

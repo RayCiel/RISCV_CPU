@@ -2,10 +2,10 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Mon Jan  1 10:54:11 2018
-# Process ID: 1568
+# Start of session at: Sun Jan  7 14:58:46 2018
+# Process ID: 34184
 # Current directory: D:/~RayCiel/Study/Computer Architecture/CPUtask/src
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12820 D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19800 D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr
 # Log file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src/vivado.log
 # Journal file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src\vivado.jou
 #-----------------------------------------------------------
@@ -17,6 +17,7 @@ open_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_m
 relaunch_sim
 relaunch_sim
 relaunch_sim
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
 relaunch_sim
 relaunch_sim
 relaunch_sim
@@ -25,11 +26,10 @@ relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
 relaunch_sim
 relaunch_sim
 relaunch_sim
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
 relaunch_sim
 relaunch_sim
 relaunch_sim

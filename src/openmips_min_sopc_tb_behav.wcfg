@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="248000001fs"></ZoomEndTime>
+      <ZoomEndTime time="222991968fs"></ZoomEndTime>
       <Cursor1Time time="1195000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="246"></NameColumnWidth>
-      <ValueColumnWidth column_width="199"></ValueColumnWidth>
+      <ValueColumnWidth column_width="200"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="15" />
    <wvobject fp_name="/openmips_min_sopc_tb/CLOCK_50" type="logic">
       <obj_property name="ElementShortName">CLOCK_50</obj_property>
       <obj_property name="ObjectShortName">CLOCK_50</obj_property>
@@ -31,6 +31,11 @@
    <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/inst_rom0/inst" type="array">
       <obj_property name="ElementShortName">inst[31:0]</obj_property>
       <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/inst_rom0/inst_mem" type="array">
+      <obj_property name="ElementShortName">inst_mem[0:1023][7:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_mem[0:1023][7:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="group122" type="group">
@@ -85,135 +90,6 @@
          <obj_property name="ElementShortName">regs[0:31][31:0]</obj_property>
          <obj_property name="ObjectShortName">regs[0:31][31:0]</obj_property>
          <obj_property name="isExpanded"></obj_property>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[0]" type="array">
-            <obj_property name="ElementShortName">[0][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[0][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[1]" type="array">
-            <obj_property name="ElementShortName">[1][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[1][31:0]</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[2]" type="array">
-            <obj_property name="ElementShortName">[2][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[2][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[3]" type="array">
-            <obj_property name="ElementShortName">[3][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[3][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[4]" type="array">
-            <obj_property name="ElementShortName">[4][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[4][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[5]" type="array">
-            <obj_property name="ElementShortName">[5][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[5][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[6]" type="array">
-            <obj_property name="ElementShortName">[6][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[6][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[7]" type="array">
-            <obj_property name="ElementShortName">[7][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[7][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[8]" type="array">
-            <obj_property name="ElementShortName">[8][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[8][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[9]" type="array">
-            <obj_property name="ElementShortName">[9][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[9][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[10]" type="array">
-            <obj_property name="ElementShortName">[10][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[10][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[11]" type="array">
-            <obj_property name="ElementShortName">[11][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[11][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[12]" type="array">
-            <obj_property name="ElementShortName">[12][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[12][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[13]" type="array">
-            <obj_property name="ElementShortName">[13][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[13][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[14]" type="array">
-            <obj_property name="ElementShortName">[14][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[14][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[15]" type="array">
-            <obj_property name="ElementShortName">[15][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[15][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[16]" type="array">
-            <obj_property name="ElementShortName">[16][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[16][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[17]" type="array">
-            <obj_property name="ElementShortName">[17][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[17][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[18]" type="array">
-            <obj_property name="ElementShortName">[18][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[18][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[19]" type="array">
-            <obj_property name="ElementShortName">[19][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[19][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[20]" type="array">
-            <obj_property name="ElementShortName">[20][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[20][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[21]" type="array">
-            <obj_property name="ElementShortName">[21][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[21][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[22]" type="array">
-            <obj_property name="ElementShortName">[22][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[22][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[23]" type="array">
-            <obj_property name="ElementShortName">[23][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[23][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[24]" type="array">
-            <obj_property name="ElementShortName">[24][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[24][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[25]" type="array">
-            <obj_property name="ElementShortName">[25][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[25][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[26]" type="array">
-            <obj_property name="ElementShortName">[26][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[26][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[27]" type="array">
-            <obj_property name="ElementShortName">[27][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[27][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[28]" type="array">
-            <obj_property name="ElementShortName">[28][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[28][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[29]" type="array">
-            <obj_property name="ElementShortName">[29][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[29][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[30]" type="array">
-            <obj_property name="ElementShortName">[30][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[30][31:0]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/regfile1/regs[31]" type="array">
-            <obj_property name="ElementShortName">[31][31:0]</obj_property>
-            <obj_property name="ObjectShortName">[31][31:0]</obj_property>
-         </wvobject>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group465" type="group">
@@ -235,6 +111,7 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/addr" type="array">
          <obj_property name="ElementShortName">addr[31:0]</obj_property>
          <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/sel" type="array">
          <obj_property name="ElementShortName">sel[3:0]</obj_property>
@@ -248,27 +125,15 @@
          <obj_property name="ElementShortName">data_o[31:0]</obj_property>
          <obj_property name="ObjectShortName">data_o[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem0" type="array">
-         <obj_property name="ElementShortName">data_mem0[0:1023][7:0]</obj_property>
-         <obj_property name="ObjectShortName">data_mem0[0:1023][7:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem1" type="array">
-         <obj_property name="ElementShortName">data_mem1[0:1023][7:0]</obj_property>
-         <obj_property name="ObjectShortName">data_mem1[0:1023][7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem2" type="array">
-         <obj_property name="ElementShortName">data_mem2[0:1023][7:0]</obj_property>
-         <obj_property name="ObjectShortName">data_mem2[0:1023][7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem3" type="array">
-         <obj_property name="ElementShortName">data_mem3[0:1023][7:0]</obj_property>
-         <obj_property name="ObjectShortName">data_mem3[0:1023][7:0]</obj_property>
+      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/data_ram0/data_mem" type="array">
+         <obj_property name="ElementShortName">data_mem[0:1023][7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_mem[0:1023][7:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group135" type="group">
       <obj_property name="label">inst_rom</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/inst_rom0/ce" type="logic">
          <obj_property name="ElementShortName">ce</obj_property>
          <obj_property name="ObjectShortName">ce</obj_property>
@@ -294,6 +159,11 @@
          <obj_property name="ElementShortName">rst</obj_property>
          <obj_property name="ObjectShortName">rst</obj_property>
       </wvobject>
+      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/if_id0/stall" type="array">
+         <obj_property name="ElementShortName">stall[5:0]</obj_property>
+         <obj_property name="ObjectShortName">stall[5:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/if_id0/if_pc" type="array">
          <obj_property name="ElementShortName">if_pc[31:0]</obj_property>
          <obj_property name="ObjectShortName">if_pc[31:0]</obj_property>
@@ -301,6 +171,7 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/if_id0/if_inst" type="array">
          <obj_property name="ElementShortName">if_inst[31:0]</obj_property>
          <obj_property name="ObjectShortName">if_inst[31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/if_id0/id_pc" type="array">
          <obj_property name="ElementShortName">id_pc[31:0]</obj_property>
@@ -309,6 +180,7 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/if_id0/id_inst" type="array">
          <obj_property name="ElementShortName">id_inst[31:0]</obj_property>
          <obj_property name="ObjectShortName">id_inst[31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group173" type="group">
@@ -321,6 +193,7 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/ex0/aluop_i" type="array">
          <obj_property name="ElementShortName">aluop_i[7:0]</obj_property>
          <obj_property name="ObjectShortName">aluop_i[7:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/ex0/alusel_i" type="array">
          <obj_property name="ElementShortName">alusel_i[7:0]</obj_property>
@@ -357,10 +230,6 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/ex0/logicout" type="array">
          <obj_property name="ElementShortName">logicout[31:0]</obj_property>
          <obj_property name="ObjectShortName">logicout[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/ex0/shiftres" type="array">
-         <obj_property name="ElementShortName">shiftres[31:0]</obj_property>
-         <obj_property name="ObjectShortName">shiftres[31:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group186" type="group">
@@ -419,23 +288,6 @@
          <obj_property name="ElementShortName">wdata_i[31:0]</obj_property>
          <obj_property name="ObjectShortName">wdata_i[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/aluop_i" type="array">
-         <obj_property name="ElementShortName">aluop_i[7:0]</obj_property>
-         <obj_property name="ObjectShortName">aluop_i[7:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/mem_addr_i" type="array">
-         <obj_property name="ElementShortName">mem_addr_i[31:0]</obj_property>
-         <obj_property name="ObjectShortName">mem_addr_i[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/reg2_i" type="array">
-         <obj_property name="ElementShortName">reg2_i[31:0]</obj_property>
-         <obj_property name="ObjectShortName">reg2_i[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/mem_data_i" type="array">
-         <obj_property name="ElementShortName">mem_data_i[31:0]</obj_property>
-         <obj_property name="ObjectShortName">mem_data_i[31:0]</obj_property>
-      </wvobject>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/wd_o" type="array">
          <obj_property name="ElementShortName">wd_o[4:0]</obj_property>
          <obj_property name="ObjectShortName">wd_o[4:0]</obj_property>
@@ -447,34 +299,6 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/wdata_o" type="array">
          <obj_property name="ElementShortName">wdata_o[31:0]</obj_property>
          <obj_property name="ObjectShortName">wdata_o[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/mem_addr_o" type="array">
-         <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
-         <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/mem_we_o" type="logic">
-         <obj_property name="ElementShortName">mem_we_o</obj_property>
-         <obj_property name="ObjectShortName">mem_we_o</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/mem_sel_o" type="array">
-         <obj_property name="ElementShortName">mem_sel_o[3:0]</obj_property>
-         <obj_property name="ObjectShortName">mem_sel_o[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/mem_data_o" type="array">
-         <obj_property name="ElementShortName">mem_data_o[31:0]</obj_property>
-         <obj_property name="ObjectShortName">mem_data_o[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/mem_ce_o" type="logic">
-         <obj_property name="ElementShortName">mem_ce_o</obj_property>
-         <obj_property name="ObjectShortName">mem_ce_o</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/zero32" type="array">
-         <obj_property name="ElementShortName">zero32[31:0]</obj_property>
-         <obj_property name="ObjectShortName">zero32[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem0/mem_we" type="logic">
-         <obj_property name="ElementShortName">mem_we</obj_property>
-         <obj_property name="ObjectShortName">mem_we</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group203" type="group">
@@ -513,7 +337,11 @@
          <obj_property name="ObjectShortName">wb_wdata[31:0]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="group127" type="group">
+   <wvobject fp_name="group168" type="group">
+      <obj_property name="label">ctrl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group4412" type="group">
       <obj_property name="label">id</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
@@ -528,7 +356,10 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/inst_i" type="array">
          <obj_property name="ElementShortName">inst_i[31:0]</obj_property>
          <obj_property name="ObjectShortName">inst_i[31:0]</obj_property>
-         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/ex_aluop_i" type="array">
+         <obj_property name="ElementShortName">ex_aluop_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ex_aluop_i[7:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/ex_wreg_i" type="logic">
          <obj_property name="ElementShortName">ex_wreg_i</obj_property>
@@ -581,6 +412,7 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/aluop_o" type="array">
          <obj_property name="ElementShortName">aluop_o[7:0]</obj_property>
          <obj_property name="ObjectShortName">aluop_o[7:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/alusel_o" type="array">
          <obj_property name="ElementShortName">alusel_o[7:0]</obj_property>
@@ -601,6 +433,10 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/wreg_o" type="logic">
          <obj_property name="ElementShortName">wreg_o</obj_property>
          <obj_property name="ObjectShortName">wreg_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/inst_o" type="array">
+         <obj_property name="ElementShortName">inst_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">inst_o[31:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/branch_flag_o" type="logic">
          <obj_property name="ElementShortName">branch_flag_o</obj_property>
@@ -626,7 +462,6 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/op2" type="array">
          <obj_property name="ElementShortName">op2[2:0]</obj_property>
          <obj_property name="ObjectShortName">op2[2:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/op3" type="array">
          <obj_property name="ElementShortName">op3[6:0]</obj_property>
@@ -651,33 +486,28 @@
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/imm_sll2_signedext" type="array">
          <obj_property name="ElementShortName">imm_sll2_signedext[31:0]</obj_property>
          <obj_property name="ObjectShortName">imm_sll2_signedext[31:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/stallreq_for_reg1_loadrelate" type="logic">
+         <obj_property name="ElementShortName">stallreq_for_reg1_loadrelate</obj_property>
+         <obj_property name="ObjectShortName">stallreq_for_reg1_loadrelate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/stallreq_for_reg2_loadrelate" type="logic">
+         <obj_property name="ElementShortName">stallreq_for_reg2_loadrelate</obj_property>
+         <obj_property name="ObjectShortName">stallreq_for_reg2_loadrelate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/pre_inst_is_load" type="logic">
+         <obj_property name="ElementShortName">pre_inst_is_load</obj_property>
+         <obj_property name="ObjectShortName">pre_inst_is_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/id0/stallreq_tmp" type="logic">
+         <obj_property name="ElementShortName">stallreq_tmp</obj_property>
+         <obj_property name="ObjectShortName">stallreq_tmp</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="group168" type="group">
-      <obj_property name="label">ctrl</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/ctrl0/rst" type="logic">
-         <obj_property name="ElementShortName">rst</obj_property>
-         <obj_property name="ObjectShortName">rst</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/ctrl0/stallreq_from_id" type="logic">
-         <obj_property name="ElementShortName">stallreq_from_id</obj_property>
-         <obj_property name="ObjectShortName">stallreq_from_id</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/ctrl0/stallreq_from_ex" type="logic">
-         <obj_property name="ElementShortName">stallreq_from_ex</obj_property>
-         <obj_property name="ObjectShortName">stallreq_from_ex</obj_property>
-      </wvobject>
-      <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/ctrl0/stall" type="array">
-         <obj_property name="ElementShortName">stall[5:0]</obj_property>
-         <obj_property name="ObjectShortName">stall[5:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="group173" type="group">
+   <wvobject fp_name="group4452" type="group">
       <obj_property name="label">pc_reg</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/openmips_min_sopc_tb/openmips_min_sopc0/openmips0/pc_reg0/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
