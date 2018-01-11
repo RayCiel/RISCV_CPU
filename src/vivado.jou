@@ -2,10 +2,17 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+<<<<<<< HEAD
 # Start of session at: Sun Jan  7 22:43:16 2018
 # Process ID: 38492
 # Current directory: D:/~RayCiel/Study/Computer Architecture/CPUtask/src
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15528 D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr
+=======
+# Start of session at: Thu Jan 11 14:43:24 2018
+# Process ID: 32416
+# Current directory: D:/~RayCiel/Study/Computer Architecture/CPUtask/src
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33900 D:\~RayCiel\Study\Computer Architecture\CPUtask\src\CPU.xpr
+>>>>>>> dev
 # Log file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src/vivado.log
 # Journal file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src\vivado.jou
 #-----------------------------------------------------------
@@ -13,10 +20,24 @@ start_gui
 open_project {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.xpr}
 launch_simulation
 source openmips_min_sopc_tb.tcl
+update_compile_order -fileset sources_1
 open_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
 relaunch_sim
 relaunch_sim
 relaunch_sim
 save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
 relaunch_sim
+<<<<<<< HEAD
+=======
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
+save_wave_config {D:/~RayCiel/Study/Computer Architecture/CPUtask/src/openmips_min_sopc_tb_behav.wcfg}
+>>>>>>> dev
 close_sim

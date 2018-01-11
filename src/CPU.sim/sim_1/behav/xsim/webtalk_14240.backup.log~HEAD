@@ -2,8 +2,8 @@
 # Webtalk v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Fri Jan  5 11:05:05 2018
-# Process ID: 27244
+# Start of session at: Fri Jan  5 11:05:23 2018
+# Process ID: 14240
 # Current directory: D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.sim/sim_1/behav/xsim/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.sim/sim_1/behav/xsim/webtalk.log
@@ -11,4 +11,4 @@
 #-----------------------------------------------------------
 source D:/~RayCiel/Study/Computer -notrace
 couldn't read file "D:/~RayCiel/Study/Computer": permission denied
-INFO: [Common 17-206] Exiting Webtalk at Fri Jan  5 11:05:05 2018...
+INFO: [Common 17-206] Exiting Webtalk at Fri Jan  5 11:05:24 2018...

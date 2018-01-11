@@ -65,7 +65,7 @@
 `define EXE_ADD 7'b0000000
 `define EXE_SUB 7'b0100000
 `define EXE_SLL 3'b001
-`define EXE_SLT 3'b001
+`define EXE_SLT 3'b010
 `define EXE_SLTU 3'b011
 `define EXE_XOR 3'b100
 `define EXE_SRL 7'b0000000

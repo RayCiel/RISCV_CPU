@@ -89,7 +89,6 @@ end
 			wd_o <= `NOPRegAddr;
 			wreg_o <= `WriteDisable;
 			instvalid <= `InstValid;
-			reg1_read_o <= 1'b0;
 			reg2_read_o <= 1'b0;
 			reg1_addr_o <= `NOPRegAddr;
 			reg2_addr_o <= `NOPRegAddr;
@@ -272,9 +271,10 @@ end
 				end
 				`EXE_JAL:
 				begin
-					wreg_o <= `WriteDisable;		aluop_o <= `EXE_JAL_OP;
+					wreg_o <= `WriteEnable;		aluop_o <= `EXE_JAL_OP;
 					alusel_o <= `EXE_RES_JUMP_BRANCH;   reg1_read_o <= 1'b1;	reg2_read_o <= 1'b0;
 					link_addr_o <= pc_plus_4;
+					wd_o <= inst_i[11:7];
 					branch_target_address_o <= {{12{inst_i[31]}}, inst_i[19:12], inst_i[20], inst_i[30:25], inst_i[24:21], 1'b0} + pc_i;
 				  	branch_flag_o <= `Branch;
 				 	//next_inst_in_delayslot_o <= `InDelaySlot;
@@ -287,6 +287,7 @@ end
 					alusel_o <= `EXE_RES_JUMP_BRANCH;   reg1_read_o <= 1'b1;	reg2_read_o <= 1'b0;
 					wd_o <= inst_i[11:7];
 					link_addr_o <= pc_plus_4;
+					imm_sll2_signedext <= {{21{inst_i[21]}}, inst_i[30:20]} + reg1_o;
 					branch_target_address_o <= ( {{21{inst_i[31]}}, inst_i[30:20]} + reg1_o) & (-1 ^ 1);
 				  	branch_flag_o <= `Branch;
 				  	//next_inst_in_delayslot_o <= `InDelaySlot;
@@ -365,7 +366,7 @@ end
 							alusel_o <= `EXE_RES_JUMP_BRANCH; reg1_read_o <= 1'b1;	reg2_read_o <= 1'b1;
 							instvalid <= `InstValid;
 							imm_sll2_signedext <= {{20{inst_i[31]}}, inst_i[7], inst_i[30:25], inst_i[11:8], 1'b0};
-							if(reg1_o == reg2_o)
+							if($signed(reg1_o) == $signed(reg2_o))
 							begin
 								branch_target_address_o <= pc_i + {{21{inst_i[31]}}, inst_i[7],inst_i[30:25], inst_i[11:8], 1'b0};
 								branch_flag_o <= `Branch;
@@ -379,7 +380,7 @@ end
 							alusel_o <= `EXE_RES_JUMP_BRANCH; reg1_read_o <= 1'b1;	reg2_read_o <= 1'b1;
 							instvalid <= `InstValid;
 							imm_sll2_signedext <= {{21{inst_i[31]}}, inst_i[7],inst_i[30:25], inst_i[11:8], 1'b0};
-							if(reg1_o == reg2_o)
+							if($signed(reg1_o) != $signed(reg2_o))
 								begin
 									branch_target_address_o <= pc_i + {{21{inst_i[31]}}, inst_i[7],inst_i[30:25], inst_i[11:8], 1'b0};
 									branch_flag_o <= `Branch;
@@ -393,7 +394,7 @@ end
 							alusel_o <= `EXE_RES_JUMP_BRANCH; reg1_read_o <= 1'b1;	reg2_read_o <= 1'b1;
 							instvalid <= `InstValid;
 							imm_sll2_signedext <={{21{inst_i[31]}}, inst_i[7],inst_i[30:25], inst_i[11:8], 1'b0};
-							if(reg1_o >= reg2_o)
+							if($signed(reg1_o) >= $signed(reg2_o))
 								begin
 									branch_target_address_o <= pc_i + {{21{inst_i[31]}}, inst_i[7],inst_i[30:25], inst_i[11:8], 1'b0};
 									branch_flag_o <= `Branch;
@@ -421,7 +422,7 @@ end
 							alusel_o <= `EXE_RES_JUMP_BRANCH; reg1_read_o <= 1'b1;	reg2_read_o <= 1'b1;
 							instvalid <= `InstValid;
 							imm_sll2_signedext <={{21{inst_i[31]}}, inst_i[7],inst_i[30:25], inst_i[11:8], 1'b0};
-							if(reg1_o <= reg2_o)
+							if($signed(reg1_o) <= $signed(reg2_o))
 								begin
 									branch_target_address_o <= pc_i + {{21{inst_i[31]}}, inst_i[7],inst_i[30:25], inst_i[11:8], 1'b0};
 									branch_flag_o <= `Branch;
@@ -464,9 +465,16 @@ end
 									&& reg1_read_o == 1'b1 ) begin
 			  stallreq_for_reg1_loadrelate <= `Stop;
 			  end
+<<<<<<< HEAD
 			else if (aluop_o == `EXE_JALR_OP) begin
 				reg1_o <= link_addr_o;
 			end else if((reg1_read_o == 1'b1) && (ex_wreg_i == 1'b1)
+=======
+			//else if (aluop_o == `EXE_JALR_OP) begin
+			//	reg1_o <= link_addr_o;
+			//end
+			 else if((reg1_read_o == 1'b1) && (ex_wreg_i == 1'b1)
+>>>>>>> dev
 									&& (ex_wd_i == reg1_addr_o) && (reg1_addr_o != 5'h0)) begin
 				reg1_o <= ex_wdata_i;
 			end else if((reg1_read_o == 1'b1) && (mem_wreg_i == 1'b1)

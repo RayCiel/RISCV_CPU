@@ -81,10 +81,10 @@ module ex(
 					logicout <= reg1_i ^ reg2_i;
 				end
 				`EXE_LUI_OP:		begin
-					logicout <= reg1_i;
+					logicout <= reg2_i;
 				end
 				`EXE_AUIPC_OP:	begin
-					logicout <= reg1_i;
+					logicout <= reg2_i;
 				end
 				default:				begin
 					logicout <= `ZeroWord;
@@ -135,7 +135,7 @@ module ex(
 		  arithmeticres <= `ZeroWord;
 	  end else begin
 		  case (aluop_i)
-			  `EXE_SLT_OP:		begin
+			  `EXE_SLT_OP, `EXE_SLTU_OP:		begin
 				  arithmeticres <= reg1_lt_reg2 ;
 			  end
 			  `EXE_ADD_OP, `EXE_ADDI_OP:		begin
