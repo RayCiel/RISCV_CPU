@@ -3,6 +3,8 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto dc902adce7594e52977887b6f93ddf80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ram_ce_o [D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips_min_sopc.v:37]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 1 for port mem_ce_o [D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/openmips.v:298]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -19,6 +21,7 @@ Compiling module xil_defaultlib.mem_wb
 Compiling module xil_defaultlib.ctrl
 Compiling module xil_defaultlib.openmips
 Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
 Compiling module xil_defaultlib.openmips_min_sopc
 Compiling module xil_defaultlib.openmips_min_sopc_tb
 Compiling module xil_defaultlib.glbl

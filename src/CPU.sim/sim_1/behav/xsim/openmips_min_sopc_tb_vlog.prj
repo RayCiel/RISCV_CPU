@@ -1,6 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
 "../../../../CPU.srcs/sim_1/new/ctrl.v" \
+"../../../../CPU.srcs/sim_1/new/data_ram.v" \
 "../../../../CPU.srcs/sim_1/new/ex.v" \
 "../../../../CPU.srcs/sim_1/new/ex_mem.v" \
 "../../../../CPU.srcs/sim_1/new/id.v" \

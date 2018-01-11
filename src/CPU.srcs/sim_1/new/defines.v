@@ -65,7 +65,7 @@
 `define EXE_ADD 7'b0000000
 `define EXE_SUB 7'b0100000
 `define EXE_SLL 3'b001
-`define EXE_SLT 3'b001
+`define EXE_SLT 3'b010
 `define EXE_SLTU 3'b011
 `define EXE_XOR 3'b100
 `define EXE_SRL 7'b0000000
@@ -136,17 +136,28 @@
 `define EXE_RES_JUMP_BRANCH 8'b11110011
 `define EXE_RES_LOAD 8'b00011011
 `define EXE_RES_STORE 8'b00011010
+`define EXE_RES_LOAD_STORE 3'b111
 
 `define EXE_RES_NOP 8'b00000000
+
 //Ö¸Áî´æ´¢Æ÷inst_rom
 `define InstAddrBus 31:0
 `define InstBus 31:0
-`define InstMemNum 131071
+`define InstMemNum 1024
 `define InstMemNumLog2 17
+
+
+//Êý¾Ý´æ´¢Æ÷data_ram
+`define DataAddrBus 31:0
+`define DataBus 31:0
+`define DataMemNum 1024
+`define DataMemNumLog2 17
+`define ByteWidth 7:0
 
 
 //Í¨ÓÃ¼Ä´æÆ÷regfile
 `define RegAddrBus 4:0
+`define RegZero 4'h0000
 `define RegBus 31:0
 `define RegWidth 32
 `define DoubleRegWidth 64

@@ -13,6 +13,7 @@ module ex(
 	input wire[`RegBus]           reg2_i,
 	input wire[`RegAddrBus]       wd_i,
 	input wire                    wreg_i,
+	input wire[`RegBus]           inst_i,
 
 	//是否转移、以及link address
 	input wire[`RegBus]           link_address_i,
@@ -21,12 +22,17 @@ module ex(
 	output reg[`RegAddrBus]       wd_o,
 	output reg                    wreg_o,
 	output reg[`RegBus]						wdata_o,
+
+	//下面新增的几个输出是为加载、存储指令准备的
+	output wire[`AluOpBus]        aluop_o,
+	output reg[`RegBus]          mem_addr_o,
+	output wire[`RegBus]          reg2_o,
+
 	output reg										stallreq
 );
 
 	reg[`RegBus] logicout;
 	reg[`RegBus] shiftres;
-	reg[`RegBus] moveres;
 	reg[`RegBus] arithmeticres;
 	reg[`DoubleRegBus] mulres;
 	wire[`RegBus] reg2_i_mux;
@@ -36,6 +42,29 @@ module ex(
 	wire reg1_lt_reg2;
 	wire[`RegBus] opdata1_mult;
 	wire[`RegBus] opdata2_mult;
+
+	//aluop_o传递到访存阶段，用于加载、存储指令
+    assign aluop_o = aluop_i;
+
+    //mem_addr传递到访存阶段，是加载、存储指令对应的存储器地址
+	always @(*) begin
+		if(rst == `RstEnable) begin
+			shiftres <= `ZeroWord;
+		end else begin
+			case (aluop_i)
+				`EXE_SB_OP, `EXE_SH_OP, `EXE_SW_OP:		begin
+    				mem_addr_o <= reg1_i + {{22{inst_i[31]}}, inst_i[30:25], inst_i[11:8], inst_i[7]};
+				end
+				`EXE_LB_OP, `EXE_LBU_OP, `EXE_LW_OP, `EXE_LH_OP, `EXE_LHU_OP:		begin
+					mem_addr_o <= reg1_i + {{22{inst_i[31]}}, inst_i[30:25], inst_i[24:21], inst_i[20]};
+				end
+			endcase
+		end
+	end
+	//将两个操作数也传递到访存阶段，也是为记载、存储指令准备的
+
+	assign reg2_o = reg2_i;
+
 
 	always @ (*) begin
 		if(rst == `RstEnable) begin
@@ -52,10 +81,10 @@ module ex(
 					logicout <= reg1_i ^ reg2_i;
 				end
 				`EXE_LUI_OP:		begin
-					logicout <= reg1_i;
+					logicout <= reg2_i;
 				end
 				`EXE_AUIPC_OP:	begin
-					logicout <= reg1_i;
+					logicout <= reg2_i;
 				end
 				default:				begin
 					logicout <= `ZeroWord;
@@ -90,8 +119,8 @@ module ex(
 
 	assign result_sum = reg1_i + reg2_i_mux;
 
-	assign ov_sum = ((!reg1_i[31] && !reg2_i_mux[31]) && result_sum[31]) ||
-									((reg1_i[31] && reg2_i_mux[31]) && (!result_sum[31]));
+	//assign ov_sum = ((!reg1_i[31] && !reg2_i_mux[31]) && result_sum[31]) ||
+		//							((reg1_i[31] && reg2_i_mux[31]) && (!result_sum[31]));
 
 	assign reg1_lt_reg2 = ((aluop_i == `EXE_SLT_OP)) ?
 												 ((reg1_i[31] && !reg2_i[31]) ||
@@ -100,12 +129,13 @@ module ex(
 			                   :	(reg1_i < reg2_i);
 
   assign reg1_i_not = ~reg1_i;
+
   always @ (*) begin
 	  if(rst == `RstEnable) begin
 		  arithmeticres <= `ZeroWord;
 	  end else begin
 		  case (aluop_i)
-			  `EXE_SLT_OP:		begin
+			  `EXE_SLT_OP, `EXE_SLTU_OP:		begin
 				  arithmeticres <= reg1_lt_reg2 ;
 			  end
 			  `EXE_ADD_OP, `EXE_ADDI_OP:		begin
@@ -134,9 +164,6 @@ module ex(
  	end
  	`EXE_RES_SHIFT:		begin
  		wdata_o <= shiftres;
- 	end
- 	`EXE_RES_MOVE:		begin
- 		wdata_o <= moveres;
  	end
  	`EXE_RES_ARITHMETIC:	begin
  		wdata_o <= arithmeticres;

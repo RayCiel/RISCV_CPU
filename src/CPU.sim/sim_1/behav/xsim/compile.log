@@ -1,8 +1,9 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ctrl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ex.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ex
-INFO: [VRFC 10-2458] undeclared symbol ov_sum, assumed default net type wire [D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ex.v:93]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/ex_mem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ex_mem
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/~RayCiel/Study/Computer Architecture/CPUtask/src/CPU.srcs/sim_1/new/id.v" into library xil_defaultlib
